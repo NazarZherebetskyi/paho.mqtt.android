@@ -3,6 +3,7 @@
 
 The Paho Android Service is an MQTT client library written in Java for developing applications on Android.
 
+## This fork uses paho.mqtt.java library from this branch https://github.com/NazarZherebetskyi/paho.mqtt.java/tree/1.2.0 This branch has few fixed that was not included in 1.2.0 release.
 
 ## Features
 |                     |                    |   |                      |                    |
@@ -91,7 +92,7 @@ If you find that there is functionality missing or bugs in the release version, 
 ### Building from source
 
  - Open a terminal and navigate to this directory (org.eclipse.paho.android.service)
- - Run the command ``./gradlew clean assemble exportJar` or on Windows: `gradlew.bat clean assemble exportJar`
+ - Run the command `./gradlew clean org.eclipse.paho.android.service:assemble org.eclipse.paho.android.service:publish` or on Windows: `gradlew.bat clean assemble exportJar`
 
 ### Running the Sample App:
 

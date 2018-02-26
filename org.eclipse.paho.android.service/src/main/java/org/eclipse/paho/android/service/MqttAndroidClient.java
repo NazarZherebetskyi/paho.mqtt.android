@@ -1263,6 +1263,14 @@ public class MqttAndroidClient extends BroadcastReceiver implements
 	}
 
 	/**
+	 * Not implemented
+	 */
+	@Override
+	public boolean removeMessage(IMqttDeliveryToken iMqttDeliveryToken) throws MqttException {
+		return false;
+	}
+
+	/**
 	 * Returns the delivery tokens for any outstanding publish operations.
 	 * <p>
 	 * If a client has been restarted and there are messages that were in the
